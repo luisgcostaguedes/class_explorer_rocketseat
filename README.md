@@ -1,36 +1,32 @@
-# Repositório de Atividades do Curso
+# Repository for Course Activities
 
-Este repositório foi criado para armazenar e organizar todas as atividades realizadas durante o curso Explorer da Rocketseat.
+This repository was created to store and organize all activities carried out during the Rocketseat Explorer course.
 
-## Estrutura do Repositório
+## Repository Structure
 
-O repositório está estruturado da seguinte forma:
+The repository is structured as follows:
 
-- **[Módulo HTML](/modulo1):** Atividades relacionadas ao primeiro módulo do curso.
+- **[HTML Module](/HTML%20Module/):** Activities related to the HTML module of the course.
 
-  - **[Atividade 1](/modulo1/atividade1):** Descrição da atividade e códigos relacionados.
-  - **[Atividade 2](/modulo1/atividade2):** Descrição da atividade e códigos relacionados.
+  - **[Activity 1](/module1/activity1):** Description of the activity and related code.
+  - **[Activity 2](/module1/activity2):** Description of the activity and related code.
 
-- **[Módulo 2](/modulo2):** Atividades relacionadas ao segundo módulo do curso.
+- **[CSS Module](/CSS%20Module/):** Activities related to the second module of the course.
 
-  - **[Atividade 1](/modulo2/atividade1):** Descrição da atividade e códigos relacionados.
-  - **[Atividade 2](/modulo2/atividade2):** Descrição da atividade e códigos relacionados.
-
-- **[Módulo 3](/modulo3):** Atividades relacionadas ao terceiro módulo do curso.
-  - **[Atividade 1](/modulo3/atividade1):** Descrição da atividade e códigos relacionados.
-  - **[Atividade 2](/modulo3/atividade2):** Descrição da atividade e códigos relacionados.
+  - **[Activity 1](/module2/activity1):** Description of the activity and related code.
+  - **[Activity 2](/module2/activity2):** Description of the activity and related code.
 
 ...
 
-## Instruções Gerais
+## General Instructions
 
-- Cada módulo possui sua própria pasta e dentro dela estão as pastas específicas para cada atividade.
-- Certifique-se de incluir documentação suficiente dentro de cada pasta para facilitar a revisão.
-- Se houver algum arquivo executável, forneça instruções claras sobre como executá-lo.
-- Use um formato consistente para os nomes dos arquivos e pastas para manter a organização.
+- Each module has its own folder, and within it are specific folders for each activity.
+- Make sure to include sufficient documentation within each folder to facilitate review.
+- If there are any executable files, provide clear instructions on how to run them.
+- Use a consistent format for file and folder names to maintain organization.
 
-## Licença
+## License
 
-Este projeto é licenciado sob a [Licença MIT](LICENSE) - veja o arquivo LICENSE para detalhes.
+This project is licensed under the [MIT License](LICENSE) - see the LICENSE file for details.
 
-Esperamos que este repositório seja útil para revisão e referência de todas as atividades realizadas durante o curso. Boa jornada de aprendizado!
+We hope this repository is useful for reviewing and referencing all activities carried out during the course. Happy learning journey!
