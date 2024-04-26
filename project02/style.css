@@ -8,14 +8,12 @@
   width: 1000px;
   margin: 54px auto 0;
 }
- header {
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
- }
-  ul {
-    display: flex;
-    list-style: none;
-
-  }
+}
+ul {
+  display: flex;
+  list-style: none;
+}
