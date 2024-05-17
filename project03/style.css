@@ -24,8 +24,12 @@ body::before {
   z-index: -1;
 }
 
-body {
+body, input, button, textarea {
   font-family: "Popins", sans-serif;
+}
+
+body {
+
   background-color: #e5e5e5;
 }
 
@@ -35,6 +39,7 @@ h1 {
   font-size: 36px;
   line-height: 42px;
   color: white;
+  margin-bottom: 24px;
 }
 p {
   font-size: 16px;
@@ -63,4 +68,36 @@ fieldset legend {
   width: 100%;
   border-bottom: 1px solid #e6e6f0;
   padding-bottom: 16px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+
+}
+.input-wrapper label {
+  font-size: 14px;
+  line-height: 24px;
+  color: #4e4958;
+  margin-bottom: 8px;
+}
+
+.input-wrapper label span {
+  margin-left: 12px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #c1bccc;
+}
+
+.input-wrapper input {
+  background: #fafafc;
+  height: 56px;
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+  padding: 0 24px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #c1bccc;
+ 
+  
 }
