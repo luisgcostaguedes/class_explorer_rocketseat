@@ -1,5 +1,5 @@
 /* 
-Este CSS terá algumas observações  */
+Este CSS terá algumas observações que serão feitas nas partes mais importantes  */
 
 * {
   margin: 0;
@@ -58,6 +58,9 @@ form {
   border-radius: 8px;
   min-height: 300px;
   padding: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
 }
 
 fieldset {
@@ -69,6 +72,8 @@ fieldset {
   flex-direction: column;
   gap: 24px;
 }
+ /* Tivemos que criar uma div que contenha todo o  */
+
 
 fieldset legend {
   font-family: "Archivo", sans-serif;
@@ -85,7 +90,8 @@ fieldset legend {
   display: flex;
   flex-direction: column;
 }
-.input-wrapper label {
+.input-wrapper label, 
+.checkbox-wrapper label {
   font-size: 14px;
   line-height: 24px;
   color: #4e4958;
@@ -130,3 +136,65 @@ fieldset legend {
 /* 
 Para fazer o fundo da barra de select, tiramos do figma o elemento em SVG e utilizando a conversão para CSS colamos aqui
 Foi feito um ajuste de não repetir o fundo e posicionar de forma fica de acordo com o figma (canto direito no meio)  */
+
+
+.col-3 {
+  display: flex;
+  gap: 20px;
+}
+
+.col-3 > div:nth-child(1) {
+  width: 100%;
+}
+/* 
+Aqui fizemos com que entre na classe .col-3 e o primeiro filho da div tenha 100% de largura, ou seja, ele vai ocupar todo o espaço disponível, e o segundo filho em diante da div vai ocupar o espaço restante,com um gap de 20px entre eles  */
+
+.checkbox-wrapper {
+  position: relative;
+}
+
+.checkbox-wrapper label {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 0;
+  
+}
+
+.checkbox-wrapper input {
+position: absolute;
+  opacity: 0;
+  height: 24px;
+  width: 24px;
+}
+
+.checkbox-wrapper label::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+  display: block;
+}
+
+.checkbox-wrapper input:checked + label::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='18' height='14' viewBox='0 0 18 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 11.17L1.83 7L0.410004 8.41L6 14L18 2L16.59 0.589996L6 11.17Z' fill='%2342D3FF'/%3E%3C/svg%3E%0A");
+ 
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.checkbox-wrapper input:focus + label::before {
+  outline: 2px solid black;
+}
+/* 
+No código do checkbox, o seguinte foi feito para criar um estilo customizado:
+
+1. O checkbox (input) foi posicionado de forma absoluta, ficando sobre o label.
+2. O label foi posicionado de forma relativa para servir de referência ao input.
+3. O label foi estilizado com um `::before` para simular a aparência de um checkbox.
+4. Quando o input está marcado (checked), o `::before` muda de cor e um ícone de check (SVG) aparece no centro.
+5. Quando o input está focado, o `::before` recebe um contorno preto (outline).
+
+Essas alterações combinadas permitem que o checkbox tenha um estilo personalizado e interativo.
+ */ 
