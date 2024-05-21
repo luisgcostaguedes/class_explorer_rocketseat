@@ -225,3 +225,7 @@ Essas alterações combinadas permitem que o checkbox tenha um estilo personaliz
  footer button:hover {
   background-color: #04bf58;
  }
+
+ input:invalid {
+  border: 1px solid #ff1010;
+}

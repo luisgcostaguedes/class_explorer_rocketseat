@@ -19,7 +19,7 @@
       <h1>Crie e compartilhe seu evento</h1>
       <p>O primeiro passo, é preencher esse formulário de inscrição.</p>
     </header>
-    <form>
+    <form id="form-event">
       <fieldset>
         <div class="fieldset-wrapper">
           <legend>
@@ -32,12 +32,12 @@
 
           <div class="input-wrapper">
             <label for="event-url">Link do evento <span>(comece com https://)</span></label>
-            <input type="url" id="event-url" />
+            <input type="url" id="event-url" required />
           </div>
 
           <div class="input-wrapper">
             <label for="event-wpp">Whatsapp para contato <span>(somente números)</span></label>
-            <input type="number" id="event-wpp" />
+            <input type="number" id="event-wpp" required />
           </div>
 
           <div class="input-wrapper">
@@ -69,13 +69,13 @@
 
           <div class="input-wrapper">
             <label for="privacy-email">E-mail do administrador <span>(Digite um e-mail válido)</span></label>
-            <input type="email" id="privacy-email" required minlength="8" />
+            <input type="email" id="privacy-email" required />
           </div>
 
           <div class="input-wrapper">
             <label for="privacy-password">Senha de acesso para os participantes <span>(Mínimo 8
                 caracteres)</span></label>
-            <input type="password" id="privacy-password" />
+            <input type="password" id="privacy-password" required minlength="8" />
           </div>
 
           <div class="checkbox-wrapper">
@@ -100,12 +100,12 @@
 
             <div class="input-wrapper">
               <label for="event-begin">Das</span></label>
-              <input type="time" id="event-begin" />
+              <input type="time" id="event-begin" required />
             </div>
 
             <div class="input-wrapper">
               <label for="event-eng">Até</label>
-              <input type="time" id="event-end" />
+              <input type="time" id="event-end" required />
             </div>
           </div>
         </div>
@@ -116,7 +116,7 @@
     </form>
     <footer>
 
-      <button type="submit">Salvar evento</button>
+      <button type="submit" form="form-event">Salvar evento</button>
     </footer>
   </div>
 </body>
