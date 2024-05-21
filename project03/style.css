@@ -29,7 +29,6 @@ body::before {
 
 body,
 input,
-button,
 textarea {
   font-family: "Popins", sans-serif;
 }
@@ -55,7 +54,7 @@ p {
 form {
   margin-top: 38px;
   background-color: #fafafc;
-  border-radius: 8px;
+  border-radius: 8px 8px 0 0;
   min-height: 300px;
   padding: 64px;
   display: flex;
@@ -198,3 +197,31 @@ No código do checkbox, o seguinte foi feito para criar um estilo customizado:
 
 Essas alterações combinadas permitem que o checkbox tenha um estilo personalizado e interativo.
  */ 
+
+ footer {
+  background-color: #F0F0F4;
+  height: 136px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 64px;
+  border-radius: 0 0 8px 8px;
+  margin-bottom: 100px;
+  border-top: 1px solid #d6d6d6;
+ }
+
+ footer button {
+  height: 56px;
+  background-color: #04d361;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  font-family: "Archivo", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+ 
+ }
+
+ footer button:hover {
+  background-color: #04bf58;
+ }
