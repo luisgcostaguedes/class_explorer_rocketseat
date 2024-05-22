@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Staatliches&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>Form - Mentoria</title>
+</head>
+
+<body>
+  <div class="page">
+    <header>
+      <h1>MENTORIA</h1>
+      <p>Preencha o formulário abaixo para <br> agendar a sua mentoria</p>
+    </header>
+    <form id="form-mentoria">
+      <fieldset>
+        <div class="fieldset-wrapper">
+          <legend>Informações Pessoais</legend>
+          <div class="separator"></div>
+          <div class="col-2">
+            <div class="input-wrapper">
+              <label for="person-name">Nome </label>
+              <input type="text" id="person-name" required />
+            </div>
+            <div class="input-wrapper">
+              <label for="person-sobrenome">Sobrenome </label>
+              <input type="text" id="person-sobrenome" required />
+            </div>
+          </div>
+          <div class="input-wrapper">
+            <label for="person-email">Email <span>(digite um email válido)</span></label>
+            <input type="text" id="person-sobrenome" required />
+          </div>
+
+          <div class="input-wrapper">
+            <label for="person-password">Senha <span>(mínimo de 6 caracteres)</span></label>
+            <input type="text" id="person-password" required minlength="6" />
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <div class="fieldset-wrapper">
+          <legend>Informações do mentor</legend>
+          <div class="separator"></div>
+          <div class="input-wrapper">
+            <label for="person-password">Nome do seu mentor <span>(só o primeiro nome)</span></label>
+            <input type="text" id="person-password" required minlength="6" />
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <div class="fieldset-wrapper">
+          <legend>Seus horários disponíveis</legend>
+          <div class="separator"></div>
+          <legend>Primeira mentoria</legend>
+          <div class="input-wrapper">
+            <label for="person-password">Nome do seu mentor <span>(só o primeiro nome)</span></label>
+            <input type="text" id="person-password" required minlength="6" />
+          </div>
+
+
+          <legend>segunda mentoria</legend>
+          <div class="input-wrapper">
+            <label for="person-password">Nome do seu mentor <span>(só o primeiro nome)</span></label>
+            <input type="text" id="person-password" required minlength="6" />
+          </div>
+        </div>
+      </fieldset>
+
+
+    </form>
+  </div>
+</body>
+
+</html>
