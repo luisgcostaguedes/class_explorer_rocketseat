@@ -3,3 +3,64 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root{
+  font-size: 62.5%; /* 1rem = 10px */
+  --text-dark: #090039;
+	--text-dark-accent: #7158ef;
+	--text-dark-gray: rgba(10, 0, 57, 0.64);
+	--text-light: #fff;
+	--text-light-accent: #7158ef;
+	--text-light-gray: rgba(255, 255, 255, 0.64);
+	--bg-light: #ece9fd;
+
+}
+
+/* Um pequeno resumo do que estamos fazendo aqui é para facilitar a acessibilidade e a responsividade do site. O que fizemos foi definir o tamanho da fonte padrão para 62.5% do tamanho da fonte padrão do navegador. Isso significa que 1rem será igual a 10px. Isso facilita a conversão de pixels para rem e facilita o cálculo de tamanhos de fonte e espaçamento. */
+
+body {
+  background-color: #ECE9FD; 
+  padding: 6.0rem 2.3rem 6.6rem;
+  font-family: "Epilogue", sans-serif;
+}
+
+/* Podendo observar que agora no lugar de colocar 16px por exemplo, vamos colocar 1.6rem, assim vamos ter o mesmo que 16px, mas com o esquema de acessibilidade funcionando */
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: 4.0rem;
+  font-style: normal;
+  font-weight: 800;
+  color: --text-dark;
+  line-height: 4.8rem;
+  margin-bottom: 1.5rem;
+}
+
+main p:first-child {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+  text-transform: uppercase;
+  color: --text-dark-accent;
+  letter-spacing: 0.3rem;
+  margin-bottom: 1.7rem;
+}
+
+h1 + p {
+  font-weight: 400;
+font-size: 1.6rem;
+line-height: 200%;
+color: --text-dark-gray;
+}
+
+ul li {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  color: --text-dark;
+}
