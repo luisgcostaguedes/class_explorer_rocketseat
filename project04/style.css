@@ -26,15 +26,17 @@ body {
 
 /* Podendo observar que agora no lugar de colocar 16px por exemplo, vamos colocar 1.6rem, assim vamos ter o mesmo que 16px, mas com o esquema de acessibilidade funcionando */
 
-ul {
-  list-style: none;
+main {
+  max-width: 33.0rem;
+  margin: 0 auto;
+
 }
 
 h1 {
   font-size: 4.0rem;
   font-style: normal;
   font-weight: 800;
-  color: --text-dark;
+  color: #090039;
   line-height: 4.8rem;
   margin-bottom: 1.5rem;
 }
@@ -45,22 +47,84 @@ main p:first-child {
   font-size: 1.6rem;
   line-height: 3.2rem;
   text-transform: uppercase;
-  color: --text-dark-accent;
-  letter-spacing: 0.3rem;
+  color: #7158ef;
+  letter-spacing: 3px;
   margin-bottom: 1.7rem;
 }
 
 h1 + p {
+  font-weight: 800;
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+  color: rgba(10, 0, 57, 0.64);
+  margin-bottom: 3.2rem;
+}
+
+
+a {
   font-weight: 400;
-font-size: 1.6rem;
-line-height: 200%;
-color: --text-dark-gray;
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+  color: #090039;
+  text-decoration: none;
+  ;
+}
+
+a:hover {
+  color: #7158ef;
+}
+
+ul {
+  margin-top: 7.2rem;
+  list-style: none;
 }
 
 ul li {
-  font-family: var(--font-family);
   font-weight: 700;
   font-size: 2.4rem;
   line-height: 3.2rem;
-  color: --text-dark;
+  color: #090039;
+  max-width: 25.7rem;
+  display: flex;
+  gap: 3.8rem;
+}
+
+ul li + li {
+  margin-top: 3.2rem;
+}
+
+ul li span {
+  font-weight: 800;
+  font-size: 7.2rem;
+  line-height: 8.0rem;
+  letter-spacing: -2px;
+  color: #090039;
+
+}
+
+/* midia queries */
+@media (min-width: 700px) {
+
+  body {
+    padding: 8.0rem ;
+  }
+
+  main {
+    max-width: 1020px;
+    display: flex;
+    gap: 10rem;
+  }
+
+  main > div {
+    max-width: 484px;
+  }
+
+  ul li {
+    gap: 5.3rem;
+    max-width: 450px;
+    align-items: center;
+    
+  }
+
+  
 }
