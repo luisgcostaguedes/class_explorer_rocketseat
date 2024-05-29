@@ -6,14 +6,7 @@
 
 :root{
   font-size: 62.5%; /* 1rem = 10px */
-  --text-dark: #090039;
-	--text-dark-accent: #7158ef;
-	--text-dark-gray: rgba(10, 0, 57, 0.64);
-	--text-light: #fff;
-	--text-light-accent: #7158ef;
-	--text-light-gray: rgba(255, 255, 255, 0.64);
-	--bg-light: #ece9fd;
-
+ 
 }
 
 /* Um pequeno resumo do que estamos fazendo aqui é para facilitar a acessibilidade e a responsividade do site. O que fizemos foi definir o tamanho da fonte padrão para 62.5% do tamanho da fonte padrão do navegador. Isso significa que 1rem será igual a 10px. Isso facilita a conversão de pixels para rem e facilita o cálculo de tamanhos de fonte e espaçamento. */
